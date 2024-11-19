@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="folder.css">
+</head>
+<body>
+
+
+
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-content">
+            <!-- Date at the top center -->
+            <div id="date"></div>
+            
+            <!-- Your Name and Title -->
+            <div class="intro-text">
+                <h1>Jimwel Hurry | Web Developer | Programmer</h1>
+            </div>
+
+            <!-- Password Prompt -->
+            <div class="password-prompt">
+
+                <input type="password" id="password" placeholder="Enter Password" onfocus="startTypingAnimation()" />
+            </div>
+            <!-- Time at the bottom -->
+            <div id="time"></div>
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- Top Bar with Apple Logo and Menu -->
+    <div class="top-bar">
+        <div class="left-side">
+            <img src="img/apple-logo.png" alt="Apple Logo" class="apple-logo"> <!-- Apple logo -->
+            <ul>
+                <li>Finder</li>
+                <li>File</li>
+                <li>Edit</li>
+                <li>View</li>
+                <li>Go</li>
+                <li>Window</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <div class="right-side">
+          <span id="date" class="macbook-date"></span> <!-- Display Date on the right side -->
+      </div>
+    </div>
+
+   
+
+
+
+  
+  <div class="folder-container">
+      <div class="folder" id="about">
+          <img src="img/folder-macbook.webp" alt="About">
+          <p style="color:white;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);">About</p>
+          <span>About</span>
+      </div>
+  
+      <div class="folder" id="project">
+          <img src="img/folder-macbook.webp" alt="Project">
+          <p style="color:white;"
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);>Project</p>
+          <span>Project</span>
+      </div>
+  
+      <div class="folder" id="skills">
+          <img src="img/folder-macbook.webp" alt="Skills">
+          <p style="color:white;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);">Skills</p>
+          <span>Skills</span>
+      </div>
+  
+      <div class="folder" id="education">
+          <img src="img/folder-macbook.webp" alt="Education">
+          <p style="color:white;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);">Education</p>
+          <span>Education</span>
+      </div>
+  </div>
+  
+
+    <!-- Folder GUI (Hidden by default) -->
+    <div class="folder-gui" id="folder-gui">
+      <div class="folder-content" id="folder-content">
+          <div class="window-controls">
+              <button class="control-btn close-btn" id="close-btn"></button>
+              <button class="control-btn minimize-btn"></button>
+              <button class="control-btn maximize-btn"></button>
+          </div>
+
+          <div id="folder-title"></div>
+          <div id="folder-body"></div>
+      </div>
+  </div>
+  
+
+    <!-- Social Icons Section -->
+    <div class="social-container">
+      <div class="social-icon">
+          <a href="https://www.instagram.com/jmmngt27/" target="_blank">
+              <img src="img/instagram.png" alt="Instagram" class="social-img">
+          </a>
+      </div>
+      <div class="social-icon">
+          <a href="https://www.linkedin.com/in/jimwel-manguiat-84bb11302/" target="_blank">
+              <img src="img/linkedin.png" alt="LinkedIn" class="social-img">
+          </a>
+      </div>
+      <div class="social-icon">
+          <a href="https://www.facebook.com" target="_blank">
+              <img src="img/apple-facebook.png" alt="Facebook" class="social-img">
+          </a>
+      </div>
+      <div class="social-icon">
+          <a href="https://github.com/JimwelHurry" target="_blank">
+              <img src="img/github.png" alt="GitHub" class="social-img">
+          </a>
+      </div>
+  </div>
+
+  <footer class="footer">
+    <p style="text-align: center;">&copy; 2024 Jimwel Hurry. All Rights Reserved.</p>
+    <p style="text-align: center;">Designed and developed by Jimwel Hurry.</p>
+</footer>
+  
+
+    <script src="js/date.js"></script>
+    <script src="js/folder.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/lockscreen.js"></script>
+
+  
+    
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.folder-container {
+  display: flex;
+  justify-content: space-around; /* Space out the folders */
+  gap: 20px; /* Add space between the folders */
+  margin-top: 50px; /* Add margin on top */
+  flex-wrap: wrap; /* Allow the folders to wrap in smaller screens */
+}
+
+/* Folder style */
+.folder {
+  cursor: pointer;
+  width: 150px; /* Width of the folder */
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Center the items vertically */
+  padding: 10px;
+
+  border-radius: 8px; /* Rounded corners */
+
+  transition: transform 0.3s ease; /* Smooth transform for hover effect */
+}
+
+/* Hover effect */
+.folder:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Folder image */
+.folder img {
+  width: 80px; /* Set the image width */
+  height: auto; /* Keep the image's aspect ratio */
+  margin-bottom: 10px; /* Space between the image and text */
+}
+
+/* Folder text (p and span) */
+.folder p, .folder span {
+  font-size: 1em;
+  color: #333; /* Dark text color */
+  margin: 5px 0; /* Space between text elements */
+}
